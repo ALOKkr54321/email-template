@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+   
+    box-sizing: border-box;
+    border: 2px solid grey;
+    margin: 10px;
+    padding: 30px 50px;
+}
+.navbar img{
+    height: 100px;
+    margin: 20px;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    height: 70%;
+}
+.left{
+    flex-basis: 80%;
+}
+.text{
+    z-index: -1;
+    opacity: 0.70;
+    background: url('https://togoteams.com/assets/images/logo-icon-40.png') no-repeat center center/cover;
+    background-size: 400px;
+    margin: 20px;
+}
+.text p{
+    font-size: 2rem;
+}
+.text h2{
+    color: blue;
+}
+.profile{
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+.profile img{
+    height: 300px;
+}
+.profile h3{
+    margin-top: 20px;
+    color: blue;
+}
+.profile span{
+    display: flex;
+    text-align: center;
+    margin-top: 10px;
+    color: blue;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 20px 100px;
+    background-color: rgb(33, 33, 74);
+}
+
+.copyright{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 20px;
+}
+.links{
+    display: flex;
+    justify-content: center;
+}
+ul {
+    list-style: none;
+}
+  
+li {
+    display: inline-block;
+    margin-right: 10px;
+ }
+
+ul li a{
+    font-size: 30px;
+    color: white;
+}
+@media only screen and (max-width:700px) {
+    .section{
+        flex-direction: column-reverse;
+    }
+    .container{
+        padding: 5px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text{
+        background-size: 300px;
+        margin: 0px;
+    }
+    .text p{
+        font-size: 1.5rem;
+    }
+    footer{
+        padding: 0px 20px;
+    }
+    ul li a{
+        font-size: 25px;
+        color: white;
+    }
+    .copyright{
+        flex-basis: 50%;
+    font-size: 10px;
+    font-size: 15px;
+    }
+    .links{
+        flex-basis: 50%;
+    }
+}
